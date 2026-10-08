@@ -1,9 +1,9 @@
 # Hi! I'm Maria Wieczorek
-**Gameplay Programmer | Unity & Unreal Engine | Tech Art Enthusiast**
+**Game Systems Programmer | Tech Art, Netcode & UI Architecture**
 
-I specialize in crafting smooth gameplay mechanics, multiplayer systems, and editor tools that streamline team workflows. I am currently studying Game Development (3rd year) and simultaneously working on three game projects.
+I am a Game Systems Programmer and Tech Art enthusiast specializing in robust systems architecture, data-driven optimization, and custom editor tools. Currently leading a development team alongside finishing my Game Development degree
 
-I have a strong cross-disciplinary mindset. With a solid foundation in Game Design and a working knowledge of 3D asset pipelines, I seamlessly collaborate with artists and designers to ensure technical blockers never slow down the team.
+My strength lies in a cross-disciplinary mindset. With a solid foundation in Game Design, UI/UX, and 3D asset pipelines, I seamlessly bridge the gap between engineering and art. I focus on writing clean, zero-allocation code and empowering my team with workflow automations so technical blockers never slow down production.
 
 ## 🛠 Tech Stack & Tools
 *   **Engines & Frameworks:** Unity 6000+, Unreal Engine 5
@@ -39,20 +39,26 @@ I care deeply about code quality, performance, and readability:
 
 *   **My Role:** Planning the core architecture, conducting code reviews, resolving bugs, and acting as the main point of contact for Game Designers and Artists.
 *   **Technical Highlights:** 
-    *   **Core Systems:** Developed the procedural tunnel generation (including resource spawning and camera logic), JSON-based Save System, and Asylum mechanics (crafting, swarm management, map path-selection).
+    *   **Core Systems:** Developed the procedural tunnel generation (including resource spawning and camera logic), JSON-based Save System, and Asylum mechanics (crafting, swarm management, map path-selection) and a comprehensive interactive Tutorial system guiding the player through the core game loop. 
     *   **UI Architecture:** Implemented a decoupled, MVC-style UI architecture using UI Toolkit. Utilized Data Binding (`dataSource`) and event delegates to keep the presentation layer strictly separated from gameplay logic.
-    *   **Animation & Behavior:** Managed complex character behaviors and animation transitions using code-driven State Machines, integrating them with the Unity Animator.
     *   **Audio & Rendering:** Helped with integrating game audio using FMOD. Deeply configured URP Pipeline Assets (e.g., Global Volumes, render settings) to balance visual fidelity with performance.
+    *   **Data-Driven Optimization:** Conducted strict A/B profiling to eliminate bottlenecks:
+        *   Reduced UI memory allocations by **98.3%** (from 39.36 to 0.656 kB/s) by implementing a caching system for energy indicator labels.
+        *   Extended the object pooling system to command indicators, eliminating runtime GC allocations and reducing setup cost by **76.6%** (from 78 to 18 µs).
+        *   Optimized dust VFX rendering (replacing mesh particles with billboards), slashing triangle count by **99.35%** and cutting GPU render time of the effect by **59.6%**.
 * *(Status: Active Development)*
-*   [💻 View Code Showcase]
+*   [💻 View Code Showcase](https://github.com/Rumsse/rustcrave.git) 
 
 ### 2. Purrrifiers: Cleaning Chaos (Rubens Games)
 *Commercial internship (Jul - Nov 2025) for a 4-player co-op multiplayer game published by FreeMind S.A. and PlayWay S.A.*
 
 [![Purrrifiers Gameplay](https://img.youtube.com/vi/I9ndQAafPn0/maxresdefault.jpg)](https://www.youtube.com/watch?v=I9ndQAafPn0)
 
-*   **My Role:** I was mainly responsible for creating the "Streamer's House" location and implementing all quests revolving around it. I gained hands-on experience in multiplayer development using **FishNet**.
-*   **Technical Highlights:** Implemented animations, worked with the IK Rig system, handled text localization, and debugged/fixed issues in existing codebases.
+*   **My Role:** I was responsible for developing the Tutorial for the game and creating the "Streamer's House" location, implementing its specific quests and custom mechanics. I also gained hands-on experience in multiplayer development using **FishNet**.
+*   **Technical Highlights:** 
+    *   **Gameplay & UI:** Scripted the main Tutorial and various location quests using the project's existing quest system. Programmed custom, location-specific mechanics and handled text localization for the entire project, including the configuration of relevant UI components.
+    *   **Animation:** Expanded character capabilities for new actions by adapting and integrating third-party mocap assets via Unity Animator, and worked with the IK Rig system.
+    *   **QA & Refactoring:** Debugged and stabilized existing network and gameplay codebases.
 *   [🎮 Steam Store Page](https://store.steampowered.com/app/2117430/?snr=1_5_9__205)
 
 ### 3. Lume Rush
@@ -61,13 +67,13 @@ I care deeply about code quality, performance, and readability:
 [![Lume Rush Gameplay](https://img.youtube.com/vi/TJ71BKYtNLw/maxresdefault.jpg)](https://youtu.be/TJ71BKYtNLw)
 
 *   **The Hook:** Inspired by the resource gathering of *60 Seconds!* and ship management of *Fallout Shelter*, the player has a very short time to gather resources on nearby planets and repair a hyperdrive before a radioactive solar explosion destroys the system.
-*   **Technical Highlights:** Handled the technical migration of the planet creator asset from Built-in to URP. Wrote a custom Scriptable Renderer Feature using the RenderGraph API to properly render complex ocean shaders in the new pipeline. Developed custom shaders and built custom editor tools/inspectors using UI Toolkit to streamline the team's workflow.
+*   **Technical Highlights:** Handled the technical migration of the planet creator asset from Built-in to URP. Wrote a custom Scriptable Renderer Feature using the RenderGraph API to properly render complex ocean shaders in the new pipeline. Developed custom shaders and built custom editor tools/inspectors to streamline the team's workflow.
 *   [💻 Source Code](https://github.com/Rumsse/lume-rush.git)
 
 ### 4. D.O.R.I.A.N.
 *Action Platformer & My First Unreal Engine 5 Project.*
 
-[![D.O.R.I.A.N. Gameplay](https://img.youtube.com/vi/g7OnpQLJHdQ/maxresdefault.jpg)](https://youtu.be/g7OnpQLJHdQ)
+[![D.O.R.I.A.N. Gameplay](https://img.youtube.com/vi/g7OnpQLJHdQ/hqdefault.jpg)](https://youtu.be/g7OnpQLJHdQ)
 
 *   **The Hook:** Set in a monochromatic "digital purgatory" where sterile geometry is disrupted by an anomaly, forcing the player to navigate through corrupted, shifting cubes.
 *   **Technical Highlights:** Developed as a university assignment. Handled Blueprint implementation for core mechanics and power-ups, animation retargeting onto a MetaHuman, and custom lighting setups.
@@ -101,7 +107,7 @@ I care deeply about code quality, performance, and readability:
 
 ### QLaRat - Dance Mat (PogJam2026)
 *A rhythm game created during a 40-hour game jam, designed specifically for a dance mat controller (with keyboard fallback).*
-*   **Technical Highlights:** Developed the entire BPM synchronization system from scratch, alongside animations and VFX.
+*   **Technical Highlights:** Developed the entire BPM synchronization system from scratch, precisely linking audio beats with VFX and character animation states using Unity Animator. 
 *   [▶️ Watch Gameplay](https://youtu.be/mKOJdjjvRRw) | [💻 Source Code on Gitlab](https://gitlab.com/Rumsse/grzmotobirds.git)
   
 ### VR - Devouring Sandworm
@@ -113,7 +119,7 @@ I care deeply about code quality, performance, and readability:
 *   [▶️ Watch Gameplay](https://youtu.be/PFTHNRm1wHk) | [💻 Source Code](https://github.com/Rumsse/poziomku-vr-gamejam.git)
 
 ### No Shit (Cyberiada Gamejam 2026)
-*A 24-hour game jam, on which worked 10 team members. The player has to constantly repair a bathroom that keeps breaking down while waiting for the plumber.
+*A 24-hour game jam project developed by a 10-person team. The player has to constantly repair a bathroom that keeps breaking down while waiting for the plumber.*
 *   [🎮 Itch.io](https://3pieczarkis.itch.io/no-shit) | [💻 Source Code](https://gitlab.com/Rumsse/cyberiada-gamejam.git)
 
 --- 
