@@ -26,7 +26,7 @@ Leveraging a background in Game Design and 3D pipelines, I seamlessly bridge eng
 
 | Category | Projects |
 | :--- | :--- |
-| **🏆 Featured Projects** | [Rustcrave](#rustcrave) &nbsp;·&nbsp; [Purrrifiers](#purrrifiers-cleaning-chaos) |
+| **🏆 Featured Projects** | [Rustcrave](Rustcrave.md) &nbsp;·&nbsp; [Purrrifiers](#purrrifiers-cleaning-chaos) |
 | **🚧 Currently Working On** | [Civil Disobedience](#civil-disobedience) &nbsp;·&nbsp; [Beavers Game](#beavers-game) &nbsp;·&nbsp; [Fantasy Game](#fantasy-game) |
 | **📚 Other** | [Lume Rush](#lume-rush) &nbsp;·&nbsp; [D.O.R.I.A.N.](#dorian) &nbsp;·&nbsp; [Eclipse Harmony](#eclipse-harmony) |
 | **🥽 Game Jams & VR** | [QLaRat](#qlarat---dance-mat-controls-pogjam2026) &nbsp;·&nbsp; [No Shit](#no-shit-cyberiada-gamejam-2026) &nbsp;·&nbsp; [Sandworm](#vr---devouring-sandworm) &nbsp;·&nbsp; [PO.ZIOMku](#vr---poziomku-pogjam2025) |
@@ -109,6 +109,7 @@ I care deeply about code quality, performance, and readability:
         *   Extended object pooling to command indicators, eliminating runtime GC allocations and reducing setup cost by **76.6%**.
         *   Optimized dust VFX rendering (replacing mesh particles with billboards), slashing triangle count by **99.35%** and GPU render time by **59.6%**.
 *   *(Status: Active Development)*
+*   [📄 **Read Full Project Overview & Architecture Deep Dive**](Rustcrave.md)
 *   [💻 View Code Showcase](https://github.com/Rumsse/rustcrave.git) 
 
 ---
