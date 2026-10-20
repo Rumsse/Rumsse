@@ -47,10 +47,8 @@ Implemented the primary systems driving the gameplay loop:
 </p>
 
 - **Swarm Management & Asylum Mechanics:** Built a comprehensive management interface allowing players to craft units and stat-boosting gadgets. Programmed detailed unit overviews displaying stats, names, and abilities, complete with dynamic camera framing focusing directly on the selected unit. Implemented quick-action buttons for restoring health/energy and smooth contextual animations for UI panels and crafting actions.
-<video src="https://github.com/user-attachments/assets/cdae5f1a-b48b-44ef-81ed-e791a6e7c478" autoplay loop muted playsinline width="100%"></video>
 
 - **Data-Driven Random Events:** Developed and heavily refactored a scalable Random Events system, optimized for designer readability. The system handles complex text and gameplay effects based on player choices and the specific units assigned to tasks (incorporating unique success rate percentages). Outcomes range from standard resource collecting or energy/health modifications to altering unit stats, granting overpowered units, or triggering easter eggs.
-<video src="https://github.com/user-attachments/assets/27c22622-c591-43b5-ab6a-b4514150f507" autoplay loop muted playsinline width="100%"></video>
 
 - **Fool-Proof Interactive Tutorial:** Created a context-aware, step-by-step tutorial system that introduces movement, hazards, and Asylum mechanics without breaking immersion. Engineered strict progression locks to prevent players from skipping steps, guaranteeing a soft-lock-free experience.
 
